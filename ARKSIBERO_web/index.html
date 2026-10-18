@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#490914">
+  <meta name="description" content="ARKSIBERO is a narrative game about a Filipino journalist, contested histories, and the stories that reach print in 1899 Manila.">
+  <title>ARKSIBERO — Stories Beneath the Ink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="arksibero_main_logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#game" aria-label="ARKSIBERO — The game">
+      <img src="arksibero_main_logo.png" alt="ARKSIBERO — Fiction 1899" class="brand-logo">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a class="nav-link is-active" href="#game" data-page="game">Game</a>
+      <a class="nav-link" href="#characters" data-page="characters">Characters</a>
+      <a class="nav-link" href="#guide" data-page="guide">Guide</a>
+      <a class="nav-link" href="#lore" data-page="archive">Archive</a>
+    </nav>
+    <a class="header-cta" href="#guide" data-page="guide">Read the field guide <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-mark"></span> MANILA <span>·</span> 1899 <span>·</span> FICTION</p>
+        <h1 id="hero-title">About the<br><em>Game</em><span class="title-period">.</span></h1>
+        <p class="hero-tagline">Stories beneath the ink.</p>
+        <p class="hero-description">Manila, 1899. Isabela Reyes is a young reporter trying to make sense of a city at war. Every paper has its own version of events. The story that survives will depend on what she chooses to print.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#game" data-page="game">Explore the game <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="#characters" data-page="characters">Meet the characters</a>
+        </div>
+        <div class="hero-meta"><span><i></i> NARRATIVE ADVENTURE</span><span>THE PHILIPPINES <b>1899</b></span></div>
+      </div>
+      <div class="hero-visual" aria-label="ARKSIBERO game emblem and newspaper cover concept">
+        <div class="visual-index">FIELD INDEX <span>00—01</span></div>
+        <div class="glass-sheet sheet-back" aria-hidden="true"></div>
+        <div class="cover-sheet">
+          <div class="cover-topline"><span>THE MANILA VOICE</span><span>EDITION NO. 01</span></div>
+          <div class="cover-rule"></div>
+          <p class="cover-kicker">THE NEWS IS NEVER THE WHOLE STORY</p>
+          <h2>Who gets<br>to write<br><em>the truth?</em></h2>
+          <div class="cover-illustration"><img src="arksibero_logo.png" alt="ARKSIBERO feather and ring emblem"><span>ONE EDITION<br>CAN CHANGE EVERYTHING</span></div>
+          <div class="cover-bottom"><span>MANILA, P.I.</span><span>1899 <b>✳</b></span></div>
+        </div>
+        <div class="visual-note"><span class="note-line"></span><span>WRITE WHAT<br>OTHERS WON'T</span></div>
+        <span class="visual-number">01 / 04</span>
+      </div>
+      <a class="scroll-cue" href="#game"><span class="scroll-line"></span> TURN THE PAGE</a>
+    </section>
+
+    <div class="ticker" aria-label="Game themes"><span>LISTEN</span><i>✳</i><span>QUESTION</span><i>✳</i><span>VERIFY</span><i>✳</i><span>PRINT</span><i>✳</i><span>LISTEN</span></div>
+
+    <section class="game-section section-wrap" id="game" aria-labelledby="game-title">
+      <div class="section-label"><span>01</span><span>THE GAME</span><span class="label-line"></span></div>
+      <div class="game-layout">
+        <div class="game-heading"><p class="eyebrow">A STORY SHAPED BY CHOICE</p><h2 id="game-title">The truth is<br><em>never one-sided.</em></h2></div>
+        <div class="game-copy"><p>In Manila, 1899, the Philippine-American War is being reported from every side. As a young Filipino journalist, you’ll gather testimony, follow paper trails, and ask questions people would rather leave alone.</p><p>There’s no simple choice between right and wrong. You decide whose account to trust, what the evidence can support, and what you’re willing to risk when the presses start rolling.</p><a class="inline-link" href="#guide" data-page="guide">How to play <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="game-facts"><div><span>01 / TESTIMONY</span><strong>A city full of competing voices</strong></div><div><span>02 / EVIDENCE</span><strong>Documents with stories of their own</strong></div><div><span>03 / THE EDITION</span><strong>Your headline changes what comes next</strong></div></div>
+      <div class="rumor-feature">
+        <div class="rumor-heading"><p class="eyebrow">INSIDE THE NEWSROOM</p><h3>How a rumor<br><em>becomes the news.</em></h3><p>A claim rarely arrives as a complete lie. It starts with a detail, loses its source, then returns as a certainty.</p></div>
+        <div class="rumor-route" aria-label="How a rumor spreads in the story">
+          <article><span>01 / THE WHISPER</span><h4>A story is heard</h4><p>Someone repeats what a neighbor saw. Nobody can say who was there first.</p></article>
+          <span class="route-arrow" aria-hidden="true">→</span>
+          <article><span>02 / THE DISPATCH</span><h4>A source is assigned</h4><p>A wire copy or official note gives the claim a date, a place, and an air of authority.</p></article>
+          <span class="route-arrow" aria-hidden="true">→</span>
+          <article><span>03 / THE HEADLINE</span><h4>The doubt disappears</h4><p>By print time, a careful “reportedly” can be gone. The bold type is what readers remember.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="characters-section" id="characters" aria-labelledby="characters-title">
+      <div class="section-wrap">
+        <div class="section-label"><span>02</span><span>CHARACTERS</span><span class="label-line"></span></div>
+        <div class="section-heading"><div><p class="eyebrow">PEOPLE WITH THEIR OWN REASONS TO TALK</p><h2 id="characters-title">Who’s telling <em>the story?</em></h2></div><p class="section-aside">Every interview asks something of you.<br>Every silence has its reasons.</p></div>
+        <div class="character-grid row row-cols-2 row-cols-xl-4 g-0">
+          <article class="character-card col">
+            <div class="character-top"><span>FILE 01 / CLASSIFIED</span><span class="character-sigil">?</span></div>
+            <div class="portrait portrait-isabela"><span>?</span><i>✳</i></div>
+            <div class="character-info"><h3>Character 1</h3><p class="character-role">IDENTITY WITHHELD <span>·</span> FILE SEALED</p><p>New to the newsroom, sharp with a question. Every answer comes at a cost.</p></div>
+            <span class="character-index">PERSONNEL FILE / 001</span>
+          </article>
+          <article class="character-card col">
+            <div class="character-top"><span>FILE 02 / CLASSIFIED</span><span class="character-sigil">?</span></div>
+            <div class="portrait portrait-tomas"><span>?</span><i>✳</i></div>
+            <div class="character-info"><h3>Character 2</h3><p class="character-role">IDENTITY WITHHELD <span>·</span> FILE SEALED</p><p>Knows every letter in the print shop—and which page someone went to great lengths to hide.</p></div>
+            <span class="character-index">PERSONNEL FILE / 002</span>
+          </article>
+          <article class="character-card col">
+            <div class="character-top"><span>FILE 03 / CLASSIFIED</span><span class="character-sigil">?</span></div>
+            <div class="portrait portrait-luz"><span>?</span><i>✳</i></div>
+            <div class="character-info"><h3>Character 3</h3><p class="character-role">IDENTITY WITHHELD <span>·</span> FILE SEALED</p><p>Knows the alleys and homes officials can’t reach. Not everything this person hears is theirs to repeat.</p></div>
+            <span class="character-index">PERSONNEL FILE / 003</span>
+          </article>
+          <article class="character-card col">
+            <div class="character-top"><span>FILE 04 / CLASSIFIED</span><span class="character-sigil">?</span></div>
+            <div class="portrait portrait-ward"><span>?</span><i>✳</i></div>
+            <div class="character-info"><h3>Character 4</h3><p class="character-role">IDENTITY WITHHELD <span>·</span> FILE SEALED</p><p>Polished prose, a source for everything. The question is who chooses those sources.</p></div>
+            <span class="character-index">PERSONNEL FILE / 004</span>
+          </article>
+        </div>
+        <p class="fiction-note">FOUR PERSONNEL FILES / IDENTITIES AND ROLES SEALED PENDING RELEASE.</p>
+      </div>
+    </section>
+
+    <section class="guide-section section-wrap" id="guide" aria-labelledby="guide-title">
+      <div class="section-label"><span>03</span><span>FIELD GUIDE</span><span class="label-line"></span></div>
+      <div class="section-heading guide-heading"><div><p class="eyebrow">LISTEN. ASK. DECIDE.</p><h2 id="guide-title">Before the presses<br><em>start rolling.</em></h2></div><p class="section-aside">There’s no single route through the story.<br>Some choices can’t be taken back.</p></div>
+      <div class="guide-layout">
+        <div class="guide-steps">
+          <article class="guide-step"><span class="step-number">01</span><div><h3>Find the story</h3><p>Follow leads through Manila. Talk to witnesses and listen for what they leave unsaid.</p></div><span class="step-mark">↘</span></article>
+          <article class="guide-step"><span class="step-number">02</span><div><h3>Check the source</h3><p>Compare interviews with telegrams, ledgers, and official statements. Dates and signatures matter.</p></div><span class="step-mark">↘</span></article>
+          <article class="guide-step"><span class="step-number">03</span><div><h3>Write the headline</h3><p>Run with the official account, or print what your sources can actually support.</p></div><span class="step-mark">↘</span></article>
+          <article class="guide-step"><span class="step-number">04</span><div><h3>Live with the edition</h3><p>See who believes you, who pays for the story, and whose name makes it into the record.</p></div><span class="step-mark">✳</span></article>
+        </div>
+        <aside class="glass-panel press-note"><p class="eyebrow">A NOTE FOR THE PRESS</p><img src="arksibero_logo.png" alt="" class="press-mark"><h3>One account<br>is never enough.</h3><p>A document is evidence, not a verdict. A witness is a person, not a tool. Keep track of where every claim came from.</p><span class="panel-stamp">FIELD NOTE NO. 04</span></aside>
+      </div>
+      <div class="desk-work">
+        <div class="desk-heading"><p class="eyebrow">AT YOUR DESK</p><h3>Three kinds of source.<br><em>None tell the whole story.</em></h3></div>
+        <div class="source-types">
+          <article><span class="source-count">A / THE WITNESS</span><h4>What someone remembers</h4><p>Ask where they were, what they saw themselves, and what they heard from someone else. A careful witness can still be mistaken.</p></article>
+          <article><span class="source-count">B / THE PAPER TRAIL</span><h4>What the record says</h4><p>Read telegrams, lists, and printed notices closely. Check who made them, when they moved, and what has been crossed out.</p></article>
+          <article><span class="source-count">C / THE OFFICIAL ACCOUNT</span><h4>What authority reports</h4><p>Official statements can offer useful detail—and reflect the interests of the office that issued them. Look for independent confirmation.</p></article>
+        </div>
+      </div>
+      <div class="choice-note"><span class="choice-mark">!</span><p><strong>Choices have a paper trail.</strong> A source you protect may speak again. A detail you print may put someone at risk. The game remembers who you believed and what you left out.</p></div>
+      <div class="ending-note"><span class="ending-symbol">✳</span><p><strong>The story has more than one ending.</strong> What you print—and who you choose to believe—will shape the final edition.</p><a href="#lore" data-page="archive">Visit the archive <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="lore-section" id="lore" aria-labelledby="lore-title">
+      <div class="section-wrap lore-wrap">
+        <div class="section-label"><span>04</span><span>THE ARCHIVE</span><span class="label-line"></span></div>
+        <section class="story-room" aria-labelledby="story-room-title">
+          <div class="story-room-heading">
+            <div><p class="eyebrow">THE READER'S DESK / FICTIONAL CASE FILES</p><h2 id="story-room-title">Would you <em>believe it?</em></h2></div>
+            <p>Read each account before you open its source note. Decide what you’d print—or hold back.</p>
+          </div>
+          <div class="story-reader" id="story-reader" aria-live="polite">
+            <div class="story-paper" id="story-paper">
+              <div class="story-paper-header"><span class="story-paper-label">SPECIAL WAR EDITION <i>✳</i> FICTIONAL DISPATCH</span><span class="story-counter" id="story-counter">01 / 04</span></div>
+              <div class="story-masthead"><span>THE</span><strong>MANILA VOICE</strong><span>A RECORD OF EVENTS IN THE PHILIPPINES</span></div>
+              <div class="story-paper-rule"></div>
+              <div class="story-date-line"><p class="story-date" data-story-date>MANILA / 14 FEBRUARY 1899</p><span>FIELD FILE <b data-story-file>01-A</b></span></div>
+              <h3 data-story-title>A bridge gone quiet</h3>
+              <p class="story-byline"><span>DISPATCH</span><i></i><span data-story-byline>FROM A LETTER LEFT AT THE NEWSROOM</span></p>
+              <p class="story-copy" data-story-copy></p>
+              <div class="story-paper-footer"><span>READ THE SOURCE BEFORE PRINTING</span><span>MANILA <b>·</b> 1899</span></div>
+            </div>
+            <div class="story-controls">
+              <p class="story-question">Would you print this account?</p>
+              <div class="story-votes" role="group" aria-label="Judge the story">
+                <button class="story-vote" type="button" data-vote="credible">Seems credible</button>
+                <button class="story-vote" type="button" data-vote="doubtful">Seems doubtful</button>
+                <button class="story-vote" type="button" data-vote="unsure">Need more evidence</button>
+              </div>
+              <div class="story-source glass-panel" id="story-source" hidden>
+                <p class="eyebrow">SOURCE NOTE / <span data-source-type></span></p>
+                <p data-source-copy></p>
+                <p class="story-prompt" data-source-prompt></p>
+              </div>
+              <div class="story-pager">
+                <button class="story-page-button" id="story-previous" type="button" aria-label="Previous story">← <span>PREVIOUS</span></button>
+                <span class="story-page-hint">TURN THE PAGE TO CONTINUE</span>
+                <button class="story-page-button" id="story-next" type="button" aria-label="Next story"><span>NEXT</span> →</button>
+              </div>
+            </div>
+          </div>
+          <p class="story-disclaimer">These dispatches are original fiction, not historical quotations or recovered documents. The archive leaves the verdict to you.</p>
+        </section>
+        <div class="lore-heading"><div><p class="eyebrow">NOTES FROM BETWEEN THE LINES</p><h2 id="lore-title">Notice anything<br><em>out of place?</em></h2></div><p class="lore-warning">SPOILERS AHEAD<br><span>Open these when you’re ready.</span></p></div>
+        <div class="lore-intro"><p>Some details are easy to miss. Look back at the records, listen between scenes, and pay attention to what changes.</p><span>5 NOTES / 5 HIDDEN DETAILS</span></div>
+        <aside class="history-context">
+          <div class="history-context-heading"><span>THE PERIOD, NOT THE PLOT</span><i aria-hidden="true">1899</i></div>
+          <h3>News traveled fast.<br><em>Certainty traveled faster.</em></h3>
+          <p>There were no feeds or instant updates. Reports moved by telegraph and cable, then by newspaper reprints, letters, and word of mouth. Every handoff took time—and gave someone another chance to shorten, translate, or frame the story. A fabricated claim or distorted detail could be repeated widely before a correction caught up.</p>
+          <div class="spread-factors">
+            <article><span>01 / THE FIRST VERSION</span><strong>Distance from the event</strong><p>Readers often depended on a correspondent or official dispatch rather than a witness they could question themselves.</p></article>
+            <article><span>02 / THE REPRINT</span><strong>Authority by repetition</strong><p>When several papers repeated the same account, it could look independently confirmed even when they shared one source.</p></article>
+            <article><span>03 / THE EDIT</span><strong>A claim loses its edges</strong><p>A cautious phrase could disappear in a headline, a translation, or a rushed summary. What began as a possibility could arrive as fact.</p></article>
+          </div>
+          <p class="context-caveat">This is historical context for the game’s themes, not a claim that every 1899 report was false. The characters, records, and clues below are fictional.</p>
+        </aside>
+        <div class="lore-list">
+          <details class="lore-entry"><summary><span class="lore-index">01</span><span class="lore-name">The date that came first</span><span class="lore-tease">One telegram appears to predate the message it carries.</span><span class="lore-toggle" aria-hidden="true">+</span></summary><div class="lore-reveal"><p>Compare Telegram No. 17 with the routing ledger. The receipt date doesn’t line up. Match the pencil mark to the other records and you’ll find a name that shouldn’t be there.</p><span>LOOK FOR: DATES / INK / SIGNATURES</span></div></details>
+          <details class="lore-entry"><summary><span class="lore-index">02</span><span class="lore-name">Three knocks</span><span class="lore-tease">Someone knocks in the newsroom when no one is there.</span><span class="lore-toggle" aria-hidden="true">+</span></summary><div class="lore-reveal"><p>Listen between scenes in the print shop. Three knocks come just before a story arrives without a source. Someone recognizes the sound, but won’t say why until the missing page turns up.</p><span>LOOK FOR: SOUND / PAPER / REPETITION</span></div></details>
+          <details class="lore-entry"><summary><span class="lore-index">03</span><span class="lore-name">The empty byline</span><span class="lore-tease">There’s always a blank where the writer’s name should be.</span><span class="lore-toggle" aria-hidden="true">+</span></summary><div class="lore-reveal"><p>It isn’t the author’s name that’s missing. In every copy with a blank byline, someone has also been erased from the clinic list. Compare the editions to find out who vanished before the paper went to press.</p><span>LOOK FOR: WHITE SPACE / LEDGERS / EDITIONS</span></div></details>
+          <details class="lore-entry"><summary><span class="lore-index">04</span><span class="lore-name">The same sentence, three papers</span><span class="lore-tease">Three mastheads repeat a line down to the same odd comma.</span><span class="lore-toggle" aria-hidden="true">+</span></summary><div class="lore-reveal"><p>The matching wording is not three confirmations. Follow the sentence back to its first printed appearance. Its source line names an office, not a reporter—and the original dispatch uses a less certain verb.</p><span>LOOK FOR: REPRINTS / SOURCE LINES / WORD CHOICE</span></div></details>
+          <details class="lore-entry"><summary><span class="lore-index">05</span><span class="lore-name">A translation with a tell</span><span class="lore-tease">One word changes between the English and Spanish copies.</span><span class="lore-toggle" aria-hidden="true">+</span></summary><div class="lore-reveal"><p>Compare the two notices line by line. The English version calls the gathering a “meeting”; the Spanish copy describes a “conspiracy.” The translator’s initials match a note in the editor’s drawer.</p><span>LOOK FOR: PARALLEL COPIES / INITIALS / THE DRAWER</span></div></details>
+        </div>
+        <div class="lore-foot"><span>END OF THE FIRST FILE</span><span>THE NEXT PAGE IS YOURS TO WRITE</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#game" data-page="game"><img src="arksibero_logo.png" alt="ARKSIBERO — Fiction 1899" class="brand-logo"></a><p>ALL RIGHTS RESERVE <span>·</span> ALL CONTENTS ARE FICTIONAL AND NOT REAL</p><a class="back-top" href="#game" data-page="game">BACK TO THE TOP ↑</a></footer>
+</body>
+</html>
